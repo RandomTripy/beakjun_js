@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeWork</title>
+    <title>홀짝 판별</title>
 </head>
 <body>
     
@@ -12,17 +12,15 @@
         /*
             숫자 판별
             1. 숫자를 입력한다.
-            2. 숫자를 확인하는 함수를 만든다.
-            3. n = 0일때 n보다 1이 더 크면 홀수, 2가 더 크면 짝수
+            2. num을 2로 나누고, 나머지가 1이면 홀수, 2면 짝수
         */
         function numCheck(num) {
             
             if (num%2 === 0){
-                 document.write(num + "은 짝수입니다.<br>");
+                document.write(num + "은 짝수입니다.<br>");
             } else {
                 document.write(num + "은 홀수입니다.<br>");
             }
-            prompt();
         }
         numCheck(prompt());
     </script>
