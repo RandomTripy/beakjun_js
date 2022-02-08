@@ -18,15 +18,13 @@
         function numCheck(num) {
             
             if (num%2 === 0){
-                 document.write(num + "은 짝수입니다.");
+                 document.write(num + "은 짝수입니다.<br>");
             } else {
-                document.write(num + "은 홀수입니다.");
+                document.write(num + "은 홀수입니다.<br>");
             }
-            
+            prompt();
         }
-        numCheck(1);
-        numCheck(2);
-        numCheck(3);
+        numCheck(prompt());
     </script>
 </body>
 </html>
