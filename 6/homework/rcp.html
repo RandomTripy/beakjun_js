@@ -12,8 +12,9 @@
             가위바위보
             1. 가위, 바위, 보에 숫자를 부여한다.
             2. 가위바위보의 경우의 수를 함수로 작성한다.
-            3. 게임을 돌린다.
-            4. 승리 혹은 진 것에 대해 출력한다.
+            3. 상대방은 무작위로 돌린다.(숫자)
+            4. 게임을 돌린다.
+            5. 승리 혹은 진 것에 대해 출력한다.
         */
         
 
@@ -26,16 +27,27 @@
             const loose = '넌 졌어.<br>';
             const same = '비겼어요!<br>';
             const you = Math.floor( ( Math.random() * 3 ) );
+            let winCount = '';
+            let looseCount = '';
+            let sameCount = '';
 
             if (me > you){
+                winCount = winCount + 1;
                 document.write(win);
             } else if (me === you) {
+                sameCount = sameCount + 1;
                 document.write(same);
             } else {
+                looseCount = looseCount + 1;
                 document.write(loose);
             }    
+            document.write(winCount + '승');
+            document.write(looseCount + '패');
+            document.write(sameCount + '무');
         }
         game(prompt('자! 우리 가위바위보 게임을 해볼까요?? 당신은 무엇을 낼거죠?', ''));
+       
+
     </script>
 </body>
 </html>
